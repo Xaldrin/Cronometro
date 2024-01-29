@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  --width: 80vw;
+  --height: 60vh;
+}
+body {
+  height: 100vh;
+  background: url(images/madera.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: var(--width);
+  max-width: 600px;
+  min-height: 350px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 80px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  width: var(--width);
+  justify-content: center;
+}
+button {
+  height: 75px;
+  width: 75px;
+  border: 2px solid black;
+  --background-color: var(--background-color);
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#Reset {
+  background-color: red;
+}
+button:has(.bi-play-fill) {
+  background-color: green;
+}
+button:has(.bi-pause) {
+  background-color: yellow;
+}
+button:has(.bi.bi-bi-bi) {
+  background-color: aqua;
+}
